@@ -84,6 +84,17 @@ public class Complex {
         im = imag;
         return this;
     }
+    
+    
+        public Complex minus(Complex b) {
+        re -= b.re;
+        im -= b.im;
+        return this;
+    }
+    
+  public Complex cos (){
+        return new Complex(Math.cos(re)*Math.cos(im),-Math.sin(re)*Math.sinh(im));
+    }
 
     /**
      * Square of Complex object's length, we're using square of length to 
